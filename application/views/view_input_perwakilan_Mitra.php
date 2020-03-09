@@ -97,15 +97,15 @@
 				<label class="col-sm-2 col-form-label"> Provinsi </label>
 				<div class="col-sm-4">
 					<select class="form-control" name="provinsi">
-						<option disabled="true" selected="true"> Pilih Provinsi </option>
-						<option>Jawa Timur</option>
+						<option disabled="true"> Pilih Provinsi </option>
+						<option value="<?= $result[0]->ID_PROVINSI ?>" selected="true"> <?= $result[0]->NAMA_PROVINSI ?> </option>
 					</select>
 				</div>
 				<label class="col-sm-2 col-form-label"> Kota </label>
 				<div class="col-sm-4">
 					<select class="form-control" name="kota">
-						<option disabled="true" selected="true"> Pilih Kota </option>
-						<option>Malang</option>
+						<option disabled="true"> Pilih Kota </option>
+						<option value="<?= $result[0]->ID_KOTA ?>" selected="true"> <?= $result[0]->NAMA_KOTA ?> </option>
 					</select>
 				</div>
 			</div>
@@ -113,7 +113,7 @@
 				<label class="col-sm-2 col-form-label"> Negara </label>
 				<div class="col-sm-4">
 					<select class="form-control" name="negara">
-						<option>Indonesia</option>
+						<option value=<?= $result[0]->id_negara ?>><?= $result[0]->nama_negara ?></option>
 					</select>
 				</div>
 				<label class="col-sm-2 col-form-label"> Kode Pos </label>
@@ -125,7 +125,7 @@
 				<label class="col-sm-2 col-form-label"> No Telepon </label>
 				<div class="col-sm-2">
 					<select class="form-control" readonly name="kodenegara">
-						<option value="62" selected="true"> +62 </option>
+						<option value="" selected="true"> +62 </option>
 					</select>
 				</div>
 				<div class="col-sm-8">

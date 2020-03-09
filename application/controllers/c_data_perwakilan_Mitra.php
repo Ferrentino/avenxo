@@ -17,4 +17,13 @@ class c_data_perwakilan_Mitra extends CI_Controller {
 		$this->load->template('view_data_perwakilan_Mitra', $data);
 	}
 
+	public function detailMitra($id)
+	{
+		$result = $this->PerwakilanMitraModel->detailDataMitra($id);
+
+		$data['mitra'] = $result;
+
+		$this->load->template('view_detail_perwakilan_mitra', $data);
+	}
+
 }

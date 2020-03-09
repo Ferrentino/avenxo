@@ -15,8 +15,11 @@
 		{
 			$data = array(
 				'ID_PERWAKILAN_LEMBAGA' => $idperwakilan,
-				'NAMA' => $nama,
+				'ID_NEGARA' => $negara,
+				'ID_PROVINSI' => $provinsi,
 				'ID_LEMBAGA' => $idlembaga,
+				'ID_KOTA' => $kota,
+				'NAMA' => $nama,
 				'NAMA_PERWAKILAN_LEMBAGA' => $namalembaga,
 				'JENIS_KELAMIN_PERWAKILAN_LEMBAGA' => $jeniskelamin,
 				'JABATAN' => $jabatan,
@@ -26,7 +29,7 @@
 				'EMAIL_PERWAKILAN_LEMBAGA' => $email,
 			);
 
-			$query = $this->db->insert('tb_mou_tr_perwakilanmitra', $data);
+			$query = $this->db->insert('tb_mou_rf_perwakilanlembaga', $data);
 			return $query;
 		}
 
@@ -34,8 +37,11 @@
 		{
 			$data = array(
 				'ID_PERWAKILAN_LEMBAGA' => $idperwakilan,
-				'NAMA' => $nama,
+				'ID_NEGARA' => $negara,
+				'ID_PROVINSI' => $provinsi,
 				'ID_LEMBAGA' => $idlembaga,
+				'ID_KOTA' => $kota,
+				'NAMA' => $nama,
 				'NAMA_PERWAKILAN_LEMBAGA' => $namalembaga,
 				'JENIS_KELAMIN_PERWAKILAN_LEMBAGA' => $jeniskelamin,
 				'JABATAN' => $jabatan,
@@ -45,13 +51,19 @@
 				'EMAIL_PERWAKILAN_LEMBAGA' => $email,
 			);
 
-			$query = $this->db->insert('tb_mou_tr_perwakilanmitra', $data);
+			$query = $this->db->insert('tb_mou_rf_perwakilanlembaga', $data);
 			return $query;
 		}
 
 		function tampilkanDataMitra() 
 		{
-			$query = $this->db->get('tb_mou_tr_perwakilanmitra');
+			$query = $this->db->get('tb_mou_rf_perwakilanlembaga');
+			return $query->result_array();
+		}
+
+		function detailDataMitra($id)
+		{
+			$query = $this->db->get_where('tb_mou_rf_perwakilanlembaga', array('ID_PERWAKILAN_LEMBAGA' => $id));
 			return $query->result_array();
 		}
 	}

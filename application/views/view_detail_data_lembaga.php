@@ -82,7 +82,7 @@
 			<div class="form-group">
 				<label class="col-sm-3 col-form-label"> <b>Data Perwakilan Lembaga</b> </label>
 				<?php foreach($detail as $u){ ?>
-				<a class="pull-right btn btn-primary" href="<?php echo site_url('c_input_perwakilan_Mitra/index/'.$u->id_lembaga) ?>">+ Tambah Perwakilan Lembaga</a>
+				<a class="pull-right btn btn-primary" href="<?php echo site_url('c_input_perwakilan_Mitra/index/'.$u->id_lembaga) ?>">+ Tambah Perwakilan Mitra Lembaga</a>
 				<?php } ?>
 				<table class="table table-bordered">
 					<thead>

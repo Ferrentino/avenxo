@@ -5,7 +5,7 @@ class M_detail_data_lembaga extends CI_Model{
 	}
 
 	function detail_data($id){
-		$query = $this->db->query('SELECT a.id_lembaga, a.nama_lembaga, a.alamat_lembaga, a.regional, c.nama_negara, a.kodepos_lembaga, a.notelp_lembaga, a.email_lembaga FROM tb_mou_rf_lembaga a JOIN tb_mou_rf_negara c ON a.id_negara = c.id_negara WHERE a.id_lembaga = "'.$id.'"');
+		$query = $this->db->query('SELECT a.id_lembaga, a.nama_lembaga, a.alamat_lembaga, a.regional, c.nama_negara, c.id_negara, a.kodepos_lembaga, a.notelp_lembaga, a.email_lembaga, k.ID_KOTA, k.NAMA_KOTA, p.ID_PROVINSI, p.NAMA_PROVINSI FROM tb_mou_rf_lembaga a JOIN tb_mou_rf_negara c ON a.id_negara = c.id_negara JOIN tb_mou_rf_kota k ON k.ID_KOTA = a.ID_KOTA JOIN tb_mou_rf_provinsi p ON p.ID_PROVINSI = a.ID_PROVINSI WHERE a.id_lembaga = "'.$id.'"');
 		return $query->result();
 	}
 

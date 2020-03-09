@@ -37,12 +37,6 @@
 			</ul>
 		</li>
 		<li class="nav-item"><a class="nav-link" href="<?php echo site_url('c_data_lembaga/index') ?>">Data Lembaga</a></li>
-		<li class="nav-item"><a>Input data Perwakilan Mitra</a>
-			<ul class="acc-menu">
-				<li class="nav-item"><a class="nav-link" href="<?php echo site_url('c_input_perwakilan_Mitra/internasional') ?>">Internasional</a></li>
-				<li class="nav-item"><a class="nav-link" href="<?php echo site_url('c_input_perwakilan_Mitra/nasional') ?>">Nasional</a></li>
-			</ul>
-		</li>
 		<li class="nav-item"><a class="nav-link" href="<?php echo site_url('c_data_perwakilan_Mitra/index') ?>">Data Perwakilan Mitra</a></li>
 	</ul>
 </li>

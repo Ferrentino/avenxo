@@ -37,7 +37,7 @@
 							<a href="#" class="dropdown-item"><span class="glyphicon glyphicon-edit"></span>Edit<br></a>
 							<a href="#" class="dropdown-item"><span class="glyphicon glyphicon-trash"></span>Delete<br></a>
 							<div class="dropdown-divider"></div>
-							<a href="<?php echo site_url('c_detail_data_lembaga/index') ?>" class="dropdown-item"><span class="glyphicon glyphicon-eye-open"></span>Preview</a>
+							<a href="detailMitra/<?= $value["ID_PERWAKILAN_LEMBAGA"] ?>" class="dropdown-item"><span class="glyphicon glyphicon-eye-open"></span>Lihat Detail</a>
 						</div>
 					</td>
 				</tr>
