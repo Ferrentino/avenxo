@@ -1,0 +1,138 @@
+.full-width{
+	width:100%;
+}
+.margin-0{
+	margin: 0px!important;
+}
+.margin-t-0{
+	margin-top: 0px!important;
+}
+.margin-b-0{
+	margin-bottom: 0px!important;
+}
+.margin-r-0{
+	margin-right: 0px !important;
+}
+.margin-l-0{
+	margin-left: 0px!important;
+}
+.margin-5{
+	margin: 5px;
+}
+.margin-t-5{
+	margin-top: 5px;
+}
+.margin-b-5{
+	margin-bottom: 5px;
+}
+.margin-r-5{
+	margin-right: 5px;
+}
+.margin-l-5{
+	margin-left: 5px;
+}
+.margin-10{
+	margin: 10px;
+}
+.margin-t-10{
+	margin-top: 10px;
+}
+.margin-b-10{
+	margin-bottom: 10px;
+}
+.margin-r-10{
+	margin-right: 10px;
+}
+.margin-l-10{
+	margin-left: 10px;
+}
+.margin-15{
+	margin: 15px;
+}
+.margin-t-15{
+	margin-top: 15px;
+}
+.margin-b-15{
+	margin-bottom: 15px;
+}
+.margin-r-15{
+	margin-right: 15px;
+}
+.margin-l-15{
+	margin-left: 15px;
+}
+.margin-20{
+	margin: 20px;
+}
+.margin-t-20{
+	margin-top: 20px;
+}
+.margin-b-20{
+	margin-bottom: 20px;
+}
+.margin-r-20{
+	margin-right: 20px;
+}
+.margin-l-20{
+	margin-left: 20px;
+}
+
+
+
+.page-logo{
+	position: relative;
+}
+.page-logo .sidebar-toggler{
+	position: absolute;
+	right: 0px;
+}
+.page-header.navbar .page-logo .logo-default{
+	margin: 25px 10px 0 10px;
+}
+
+.select2-container, .select2-choice , .select2-choice .select2-arrow{
+	background: transparent !important;
+}
+.select2-choice, .select2-arrow , .select2-drop-active{
+	border-color: #ced6de !important;
+}
+.select2-drop-active{
+	border-color: #aaa !important;
+}
+.select2-container .select2-choice{
+	height: 34px !important;
+	padding: 4px 0 0 8px !important;
+}
+.dropdown-menu.open
+{
+
+}
+.modal-loading{
+	padding: 10px 20px;
+	margin: 20px auto;
+	text-align: center;
+	font-size: 15px;
+}
+.ip-modal-dialog{
+	margin: 150px auto !important;
+}
+.page-header.navbar .search-peg-form {
+	width: 300px;
+	margin: 23px 20px 0 10px;
+	display: inline-block;
+	float: left;
+}
+.toast-top-right {
+	top: 80px !important;
+	right: 12px;
+}
+.page-breadcrumb li{
+	margin-right: 5px;
+}
+.page-breadcrumb li:last-child > .fa{
+	display:none;
+}
+
+table.myTable{
+	width: 100% !important;
+}
